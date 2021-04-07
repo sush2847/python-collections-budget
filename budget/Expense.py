@@ -23,6 +23,7 @@ class Expenses():
                     continue
                 amount = float((row[3][2:]).replace(',',''))
                 self.list.append(Expense(row[0],row[1], row[2], amount))
+                # print(*self.list)
                 self.sum += amount
 
     def categorize_for_loop(self):
